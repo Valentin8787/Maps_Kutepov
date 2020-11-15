@@ -36,7 +36,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             mMap.getUiSettings().setCompassEnabled(true);
 
         LatLng stavropol = new LatLng(45.0452979, 41.968684);
-        mMap.addMarker(new MarkerOptions().position(stavropol).title("Marker in Stavropol"));
+        mMap.addMarker(new MarkerOptions().position(stavropol).title("My city"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(stavropol));
 
         mMap.setOnMapClickListener(new GoogleMap.OnMapClickListener() {
